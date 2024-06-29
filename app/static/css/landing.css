@@ -1,0 +1,86 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 950px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent line breaks */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #138496;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        /* color: black; */
+    }
+}
+.hero-content p {
+    color: #000000; /* Adjust the color as needed */
+ }
+
+.gradient-hover {
+    background-image: linear-gradient(to right, #17a2b8 0%, #138496 100%); /* Gradient colors */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* Hide text color */
+    transition: background-position 0.5s ease;
+}
+
+.gradient-hover:hover {
+    /* background-color: #007bff; */
+    background-position: 100%;
+    transform: translateY(-3px);
+}

@@ -20,7 +20,8 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
+    path('', landing),
+    path('insert/', lambda request: render(request, 'index.html'), name='index'),
     path('search/', search),
     path('predict/<str:ticker_value>/<str:number_of_days>/', predict),
     path('ticker/', ticker),

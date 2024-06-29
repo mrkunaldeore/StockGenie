@@ -14,7 +14,7 @@ import json
 
 import yfinance as yf
 import datetime as dt
-import qrcode
+# import qrcode
 
 from .models import Project
 
@@ -22,7 +22,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing, model_selection, svm
 
 
-
+def landing(request):
+    return render(request,'landing.html')
 
 # The Home page when Server loads up
 def index(request):
